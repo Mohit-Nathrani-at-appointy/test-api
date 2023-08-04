@@ -1,0 +1,17 @@
+[
+    {
+        "id": "res_1",
+        "name": "pitch 1",
+        "description": "description"
+    },
+    {
+        "id": "res_2",
+        "name": "pitch 2",
+        "description": "description"
+    },
+    {
+        "id": "res_3",
+        "name": "pitch 3",
+        "description": "description"
+    }
+]
