@@ -54,3 +54,18 @@ type ListAppointmentRequest struct {
 	StartTime  string `json:"startTime"`
 	EndTime    string `json:"endTime"`
 }
+
+// helper functions
+
+func TimeToString(tm time.Time) string {
+	return tm.Format(time.RFC3339)
+}
+
+func StringToTime(timeStr string) (time.Time, error) {
+	t, err := time.Parse(time.RFC3339, timeStr)
+	if err != nil {
+		return time.Time{}, err
+	}
+
+	return t, nil
+}
